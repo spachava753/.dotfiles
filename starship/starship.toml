@@ -1,0 +1,25 @@
+# Don't print a new line at the start of the prompt
+add_newline = false
+
+[line_break]
+disabled = false
+
+[memory_usage]
+show_percentage = false
+show_swap = true
+threshold = -1
+symbol = "Mem "
+separator = "|"
+style = "bold dimmed purple"
+disabled = false
+
+[aws]
+style = "bold blue"
+symbol = "🅰 "
+displayed_items = "all"
+disabled = false
+
+[kubernetes]
+symbol = "⛵ "
+style = "dim green"
+disabled = false
