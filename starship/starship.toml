@@ -25,6 +25,6 @@ displayed_items = "all"
 disabled = false
 
 [kubernetes]
-symbol = "⛵ "
+symbol = "k8s "
 style = "dim green"
 disabled = false
