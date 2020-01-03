@@ -87,7 +87,7 @@ scrolling:
   faux_multiplier: 3
 
   # Scroll to the bottom when new text is written to the terminal.
-  auto_scroll: false
+  auto_scroll: true
 
 # Spaces per Tab (changes require restart)
 #
@@ -389,10 +389,10 @@ live_config_reload: true
 #   - (macOS) /bin/bash --login
 #   - (Linux) user login shell
 #   - (Windows) powershell
-shell:
-  program: /usr/bin/tmux
-#  args:
-#    - --login
+# shell:
+#   program: /usr/bin/tmux
+#   args:
+#   - --login
 
 # Startup directory
 #
@@ -558,7 +558,8 @@ key_bindings:
 
   - { key: Paste,                   action: Paste                            }
   - { key: Copy,                    action: Copy                             }
-  - { key: L,        mods: Control, action: ClearLogNotice                   }
+  #- { key: L,        mods: Control, action: ClearLogNotice                   }
+  - { key: L,        mods: Control, command: { program: "clear", args: [ }   }
   - { key: L,        mods: Control, chars: "\x0c"                            }
   - { key: Home,     mods: Alt,     chars: "\x1b[1;3H"                       }
   - { key: Home,                    chars: "\x1bOH",        mode: AppCursor  }
